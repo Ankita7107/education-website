@@ -4,10 +4,6 @@ import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
 
 const fadeUp = { hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } };
 
-const cities = [
-  "Mumbai", "Delhi", "Bangalore", "Hyderabad", "Pune", "Chennai",
-  "Kolkata", "Ahmedabad", "Jaipur", "Lucknow",
-];
 
 export default function ContactPage() {
   return (
@@ -54,18 +50,6 @@ export default function ContactPage() {
               ))}
             </div>
 
-            {/* Cities */}
-            <div>
-              <h3 className="font-heading font-bold text-slate-900 mb-4">Our Offices / Recruiter Presence</h3>
-              <div className="flex flex-wrap gap-2">
-                {cities.map((c) => (
-                  <span key={c} className="text-xs font-semibold text-blue-700 bg-blue-50 border border-blue-200 rounded-lg px-3 py-1.5">
-                    📍 {c}
-                  </span>
-                ))}
-                <span className="text-xs font-semibold text-slate-500 bg-slate-100 rounded-lg px-3 py-1.5">+10 more cities</span>
-              </div>
-            </div>
 
             {/* Map placeholder */}
             <div className="mt-8 rounded-2xl overflow-hidden border border-slate-200 h-52 bg-slate-100 flex items-center justify-center">
