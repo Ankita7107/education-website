@@ -9,11 +9,11 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
+  { href: "/resume-builder", label: "Resume Builder" },
   {
     label: "Portals",
     children: [
       { href: "/jobs", label: "Job Portal" },
-      { href: "/resume-builder", label: "Resume Builder" },
       { href: "/employer", label: "Employer Portal" },
     ],
   },
