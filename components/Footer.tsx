@@ -10,28 +10,6 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-const cities = [
-  "Mumbai",
-  "Delhi",
-  "Bangalore",
-  "Hyderabad",
-  "Pune",
-  "Chennai",
-  "Kolkata",
-  "Ahmedabad",
-  "Jaipur",
-  "Lucknow",
-  "Surat",
-  "Nagpur",
-  "Indore",
-  "Bhopal",
-  "Patna",
-  "Coimbatore",
-  "Vadodara",
-  "Kochi",
-  "Chandigarh",
-  "Visakhapatnam",
-];
 
 const quickLinks = [
   { href: "/", label: "Home" },
@@ -78,7 +56,7 @@ export default function Footer() {
       </div>
 
       {/* Main Footer */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {/* Brand */}
         <div className="lg:col-span-1">
           <Link href="/" className="flex items-center gap-3 mb-5">
@@ -181,22 +159,6 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Cities */}
-        <div>
-          <h4 className="font-heading font-700 text-white text-base mb-5 pb-2 border-b border-white/10">
-            We Operate In (135+ Cities)
-          </h4>
-          <div className="flex flex-wrap gap-2">
-            {cities.map((city) => (
-              <span
-                key={city}
-                className="text-xs text-slate-400 bg-white/5 border border-white/10 rounded-lg px-2.5 py-1 hover:bg-blue-600/20 hover:border-blue-500/40 hover:text-white transition-all cursor-default"
-              >
-                {city}
-              </span>
-            ))}
-          </div>
-        </div>
       </div>
 
       {/* Bottom Bar */}
