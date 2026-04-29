@@ -116,6 +116,7 @@ export default function ResumeBuilder() {
           <div className="lg:col-span-5 space-y-6 print:hidden">
             
             {/* 1. Upload Section */}
+            {/* 1. Upload Section - Temporarily Hidden
             <motion.div variants={fadeUp} initial="hidden" animate="visible" className="card p-6 border-dashed border-2 border-blue-200 bg-blue-50/30">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
@@ -152,6 +153,7 @@ export default function ResumeBuilder() {
                 </div>
               </div>
             </motion.div>
+            */}
 
             {/* 2. Template Selector */}
             <div className="card p-6">
