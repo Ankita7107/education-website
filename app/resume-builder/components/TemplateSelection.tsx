@@ -9,7 +9,8 @@ const templates = [
   {
     id: "professional",
     name: "The Professional",
-    description: "Classic structure designed for corporate and executive roles. High readability and authority.",
+    description:
+      "Classic structure designed for corporate and executive roles. High readability and authority.",
     color: "blue",
     borderColor: "group-hover:border-blue-500",
     preview: (
@@ -30,12 +31,13 @@ const templates = [
           </div>
         </div>
       </div>
-    )
+    ),
   },
   {
     id: "modern",
     name: "Modern Minimal",
-    description: "Clean, minimalist approach for tech, creative, and startup environments. Focus on impact.",
+    description:
+      "Clean, minimalist approach for tech, creative, and startup environments. Focus on impact.",
     color: "slate",
     borderColor: "group-hover:border-slate-900",
     preview: (
@@ -51,12 +53,13 @@ const templates = [
           <div className="h-2 w-3/4 bg-slate-50 rounded"></div>
         </div>
       </div>
-    )
+    ),
   },
   {
     id: "modern-double",
     name: "Modern Double",
-    description: "Balanced two-column layout with high content density. Perfect for experienced mid-level pros.",
+    description:
+      "Balanced two-column layout with high content density. Perfect for experienced mid-level pros.",
     color: "teal",
     borderColor: "group-hover:border-teal-500",
     preview: (
@@ -78,12 +81,13 @@ const templates = [
           </div>
         </div>
       </div>
-    )
+    ),
   },
   {
     id: "executive",
     name: "Executive Premium",
-    description: "High-contrast design for senior leadership. Features visual skill bars and profile emphasis.",
+    description:
+      "High-contrast design for senior leadership. Features visual skill bars and profile emphasis.",
     color: "blue",
     borderColor: "group-hover:border-blue-600",
     preview: (
@@ -104,12 +108,13 @@ const templates = [
           </div>
         </div>
       </div>
-    )
+    ),
   },
   {
     id: "creative",
     name: "Creative Brand",
-    description: "Bold, character-driven design for creatives and startups. Features a prominent profile area.",
+    description:
+      "Bold, character-driven design for creatives and startups. Features a prominent profile area.",
     color: "purple",
     borderColor: "group-hover:border-purple-600",
     preview: (
@@ -130,12 +135,13 @@ const templates = [
           <div className="col-span-4 bg-slate-50 rounded-xl h-16"></div>
         </div>
       </div>
-    )
+    ),
   },
   {
     id: "ats-friendly",
     name: "ATS Optimized",
-    description: "Ultra-simple, text-first layout guaranteed to pass any Applicant Tracking System.",
+    description:
+      "Ultra-simple, text-first layout guaranteed to pass any Applicant Tracking System.",
     color: "slate",
     borderColor: "group-hover:border-slate-400",
     preview: (
@@ -151,12 +157,13 @@ const templates = [
           </div>
         </div>
       </div>
-    )
+    ),
   },
   {
     id: "elegant",
     name: "Elegant Serif",
-    description: "Sophisticated, typography-focused design for academics and law professionals.",
+    description:
+      "Sophisticated, typography-focused design for academics and law professionals.",
     color: "amber",
     borderColor: "group-hover:border-slate-800",
     preview: (
@@ -171,12 +178,13 @@ const templates = [
           <div className="h-2 w-2/3 bg-slate-100 rounded mx-auto"></div>
         </div>
       </div>
-    )
+    ),
   },
   {
     id: "traditional",
     name: "Traditional Ivy",
-    description: "Standard academic/federal format. High information density and zero distractions.",
+    description:
+      "Standard academic/federal format. High information density and zero distractions.",
     color: "slate",
     borderColor: "group-hover:border-slate-900",
     preview: (
@@ -186,7 +194,7 @@ const templates = [
           <div className="h-2 w-1/2 bg-slate-400/10 mx-auto rounded"></div>
         </div>
         <div className="space-y-3">
-          <div className="h-[2px] w-full bg-slate-900/20"></div>
+          <div className="h-0.5 w-full bg-slate-900/20"></div>
           <div className="space-y-1">
             <div className="h-2 w-full bg-slate-50 rounded"></div>
             <div className="h-2 w-full bg-slate-50 rounded"></div>
@@ -194,31 +202,38 @@ const templates = [
           </div>
         </div>
       </div>
-    )
-  }
+    ),
+  },
 ];
 
 export function TemplateSelection({ onSelect }: TemplateSelectionProps) {
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
       className="py-12"
     >
       <div className="text-center mb-16">
-        <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="section-label mb-4 inline-block tracking-[0.3em]">Design Your Career</motion.span>
+        <motion.span
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="section-label mb-4 inline-block tracking-[0.3em]"
+        >
+          Design Your Career
+        </motion.span>
         <h1 className="font-heading text-5xl font-extrabold text-slate-900 mb-6">
           Choose Your <span className="text-gradient-blue">Canvas</span>
         </h1>
         <p className="text-slate-500 text-lg max-w-2xl mx-auto">
-          Select a professionally crafted template to get started. You can always switch templates later while keeping your data.
+          Select a professionally crafted template to get started. You can
+          always switch templates later while keeping your data.
         </p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
         {templates.map((template, idx) => (
-          <motion.div 
+          <motion.div
             key={template.id}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0, transition: { delay: idx * 0.05 } }}
@@ -226,17 +241,23 @@ export function TemplateSelection({ onSelect }: TemplateSelectionProps) {
             onClick={() => onSelect(template.id)}
             className="group cursor-pointer"
           >
-            <div className={`bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl border-2 border-transparent transition-all duration-500 ${template.borderColor}`}>
-              <div className="h-[320px] bg-slate-50 relative overflow-hidden p-4">
+            <div
+              className={`bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl border-2 border-transparent transition-all duration-500 ${template.borderColor}`}
+            >
+              <div className="h-80 bg-slate-50 relative overflow-hidden p-4">
                 {template.preview}
-                <div className={`absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/5 transition-colors flex items-center justify-center`}>
+                <div
+                  className={`absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/5 transition-colors flex items-center justify-center`}
+                >
                   <div className="bg-white text-slate-900 font-black text-[10px] uppercase tracking-widest px-6 py-3 rounded-full shadow-xl opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
                     Use Template
                   </div>
                 </div>
               </div>
               <div className="p-6 border-t border-slate-50">
-                <h3 className="text-lg font-black text-slate-900 mb-1 leading-tight">{template.name}</h3>
+                <h3 className="text-lg font-black text-slate-900 mb-1 leading-tight">
+                  {template.name}
+                </h3>
                 <p className="text-slate-400 text-[10px] leading-relaxed font-medium line-clamp-2 uppercase tracking-tighter">
                   {template.description}
                 </p>
