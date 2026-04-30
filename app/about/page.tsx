@@ -128,7 +128,7 @@ export default function AboutPage() {
               <span className="text-gradient-blue">Recruitment</span> Excellence
             </h1>
             <p className="text-slate-300 text-xl leading-relaxed max-w-2xl mx-auto">
-              From a small team of passionate recruiters to a network of 50+
+              From a small team of passionate recruiters to a network of 350+
               professionals spanning 135+ cities — Talent Connect India has been
               building India's careers, one placement at a time.
             </p>

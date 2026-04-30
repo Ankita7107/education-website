@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Talent Connect India | Affordable Recruitment & Hiring Solutions",
     description:
-      "5000+ Placements | 50+ Recruiters | 135+ Cities | Post Job @ ₹199",
+      "5000+ Placements | 350+ Recruiters | 135+ Cities | Post Job @ ₹199",
     type: "website",
   },
 };

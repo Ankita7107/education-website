@@ -45,7 +45,7 @@ const stats = [
   },
   {
     icon: Users,
-    value: 50,
+    value: 350,
     suffix: "+",
     label: "Active Recruiters",
     color: "text-blue-400",
@@ -151,9 +151,10 @@ const industries = [
   { icon: "🏗️", label: "Construction & Real Estate" },
   { icon: "🚗", label: "Automobile & Auto Ancillary" },
   { icon: "🍽️", label: "Hospitality & Hotels" },
-  { icon: "📦", label: "Logistics & Supply Chain" },
-  { icon: "📞", label: "BPO / Call Centre" },
-  { icon: "⚡", label: "Energy & Infrastructure" },
+  // { icon: "💻", label: "ITES (Information Technology Enabled Services)" },
+  { icon: "💻", label: "ITES " },
+  { icon: "📞", label: "BPO / KPO Centre" },
+  // { icon: "⚡", label: "Energy & Infrastructure" },
 ];
 
 const testimonials = [
@@ -245,7 +246,7 @@ export default function HomePage() {
               className="inline-flex items-center gap-2 bg-amber-400/15 border border-amber-400/30 text-amber-300 text-xs font-bold px-5 py-2 rounded-full mb-8 uppercase tracking-wider"
             >
               <Star size={12} className="fill-amber-300" />
-              Trusted by 50+ Companies Across India
+              Trusted by 350+ Companies Across India
             </motion.div>
 
             <motion.h1
@@ -267,7 +268,7 @@ export default function HomePage() {
             >
               Affordable Hiring Solutions Starting at{" "}
               <span className="text-amber-400 font-bold text-2xl">₹199</span>.
-              AI-based calling, verified leads, and 50+ dedicated recruiters.
+              AI-based calling, verified leads, and 350+ dedicated recruiters.
             </motion.p>
 
             {/* Trust Chips */}
@@ -704,7 +705,7 @@ export default function HomePage() {
       <FAQSection />
 
       {/* ═══ 8. CTA BANNER ══════════════════════════════ */}
-      <section className="py-24 bg-white">
+      {/* <section className="py-24 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -746,7 +747,7 @@ export default function HomePage() {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
