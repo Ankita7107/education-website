@@ -75,24 +75,47 @@ export default function ResumeBuilder() {
     <div className="min-h-screen bg-slate-50 py-12">
       <style dangerouslySetInnerHTML={{ __html: `
         @media print {
-          nav, footer, .print-hidden, header {
+          @page {
+            size: A4;
+            margin: 0 !important;
+          }
+          nav, footer, .print-hidden, .no-print, .section-label, .btn-primary {
             display: none !important;
           }
-          body {
-            background: white !important;
+          html, body {
+            height: auto !important;
             margin: 0 !important;
             padding: 0 !important;
+            overflow: visible !important;
+            background: white !important;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+          }
+          .min-h-screen {
+            min-height: 0 !important;
+            padding: 0 !important;
+            background: white !important;
           }
           #resume-document {
-            position: absolute !important;
+            position: relative !important;
             top: 0 !important;
             left: 0 !important;
             width: 100% !important;
             margin: 0 !important;
             border: none !important;
             box-shadow: none !important;
-            -webkit-print-color-adjust: exact !important;
-            print-color-adjust: exact !important;
+            transform: none !important;
+            border-radius: 0 !important;
+            min-height: 0 !important;
+            height: auto !important;
+          }
+          /* Ensure all parent containers don't interfere */
+          .max-w-7xl, .lg\\:col-span-7, .sticky {
+            padding: 0 !important;
+            margin: 0 !important;
+            max-width: 100% !important;
+            width: 100% !important;
+            position: static !important;
           }
         }
       ` }} />
