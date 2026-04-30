@@ -10,7 +10,6 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-
 const quickLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About Us" },
@@ -77,13 +76,21 @@ export default function Footer() {
 
             <div className="leading-tight">
               <div className="flex items-center">
-                <span className="font-heading font-800 text-2xl tracking-tighter text-white group-hover:text-blue-400 transition-colors duration-300">Talent</span>
-                <span className="font-heading font-800 text-2xl tracking-tighter text-blue-400">Connect</span>
+                <span className="font-heading font-800 text-2xl tracking-tighter text-white group-hover:text-blue-400 transition-colors duration-300">
+                  Talent
+                </span>
+                <span className="font-heading font-800 text-2xl tracking-tighter text-blue-400">
+                  Connect
+                </span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-[10px] font-black text-amber-400 tracking-[0.2em] uppercase">India</span>
+                <span className="text-[10px] font-black text-amber-400 tracking-[0.2em] uppercase">
+                  India
+                </span>
                 <div className="h-px w-8 bg-white/10" />
-                <div className="text-[9px] font-bold text-slate-500 tracking-wider">RECRUITMENT</div>
+                <div className="text-[9px] font-bold text-slate-500 tracking-wider">
+                  RECRUITMENT
+                </div>
               </div>
             </div>
           </Link>
@@ -99,7 +106,7 @@ export default function Footer() {
             </div>
             <div className="flex items-center gap-3">
               <Mail size={15} className="text-blue-400 shrink-0" />
-              <span>info@jobportal.in</span>
+              <span>info@talentconnectindia.in</span>
             </div>
             <div className="flex items-start gap-3">
               <MapPin size={15} className="text-blue-400 shrink-0 mt-0.5" />
@@ -173,7 +180,6 @@ export default function Footer() {
             ))}
           </ul>
         </div>
-
       </div>
 
       {/* Bottom Bar */}

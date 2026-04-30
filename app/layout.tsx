@@ -18,14 +18,15 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Job Portal | Affordable Recruitment & Hiring Solutions — Starting at ₹199",
+  title: "TCI | Affordable Recruitment & Hiring Solutions — Starting at ₹199",
   description:
-    "Job Portal offers 10+ years of recruitment excellence with AI-based calling, verified leads, 5000+ placements, and affordable job posting starting at ₹199. Trusted by employers and job seekers across 135+ cities in India.",
+    "Talent Connect India offers 10+ years of recruitment excellence with AI-based calling, verified leads, 5000+ placements, and affordable job posting starting at ₹199. Trusted by employers and job seekers across 135+ cities in India.",
   keywords:
-    "recruitment company, job placement, hiring solutions, affordable hiring, AI calling, job portal India, post a job ₹199, verified leads, Job Portal",
+    "recruitment company, job placement, hiring solutions, affordable hiring, AI calling, Talent Connect India India, post a job ₹199, verified leads, Talent Connect India",
   openGraph: {
-    title: "Job Portal | Affordable Recruitment & Hiring Solutions",
-    description: "5000+ Placements | 50+ Recruiters | 135+ Cities | Post Job @ ₹199",
+    title: "Talent Connect India | Affordable Recruitment & Hiring Solutions",
+    description:
+      "5000+ Placements | 50+ Recruiters | 135+ Cities | Post Job @ ₹199",
     type: "website",
   },
 };
