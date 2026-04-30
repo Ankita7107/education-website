@@ -383,7 +383,7 @@ export default function HomePage() {
             </h2>
             <p className="text-slate-500 mt-4 max-w-xl mx-auto">
               Compare and see why thousands of employers choose Talent Connect
-              India over Naukri, Apna, and WorkIndia.
+              India over traditional job boards, local hiring apps, and recruitment agencies.
             </p>
           </motion.div>
 
@@ -405,13 +405,13 @@ export default function HomePage() {
                     </span>
                   </th>
                   <th className="px-6 py-4 text-sm font-semibold opacity-80">
-                    Naukri
+                    Traditional Job Boards
                   </th>
                   <th className="px-6 py-4 text-sm font-semibold opacity-80">
-                    Apna
+                    Local Hiring Apps
                   </th>
                   <th className="px-6 py-4 text-sm font-semibold opacity-80">
-                    WorkIndia
+                    Recruitment Agencies
                   </th>
                 </tr>
               </thead>
