@@ -115,7 +115,7 @@ export default function AboutPage() {
             <h2 className="font-heading text-4xl font-bold text-slate-900 mt-3">10 Years of Growth</h2>
           </motion.div>
           <div className="relative">
-            <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-600 to-blue-200 hidden md:block" />
+            <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-0.5 bg-linear-to-b from-blue-600 to-blue-200 hidden md:block" />
             <div className="space-y-10">
               {timeline.map((item, i) => (
                 <motion.div
