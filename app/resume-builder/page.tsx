@@ -142,7 +142,7 @@ export default function ResumeBuilder() {
                       <X size={14} className="rotate-45" /> Change Template
                     </button>
                     <span className="text-slate-300">|</span>
-                    <span className="section-label !mb-0">Resume Suite</span>
+                    <span className="section-label mb-0!">Resume Suite</span>
                   </div>
                   <motion.h1 
                     initial={{ opacity: 0, y: 10 }} 
@@ -182,7 +182,7 @@ export default function ResumeBuilder() {
                         All Templates
                       </button>
                     </div>
-                    <div className="grid grid-cols-2 gap-3 max-h-[300px] overflow-y-auto pr-2 custom-scrollbar">
+                    <div className="grid grid-cols-2 gap-3 max-h-300px overflow-y-auto pr-2 custom-scrollbar">
                       {[
                         { id: "professional", name: "Professional", icon: Briefcase, color: "bg-slate-900" },
                         { id: "modern", name: "Modern Minimal", icon: Sparkles, color: "bg-blue-600" },
@@ -202,7 +202,7 @@ export default function ResumeBuilder() {
                               : "border-slate-100 hover:border-blue-200 bg-white"
                           }`}
                         >
-                          <div className={`w-8 h-8 rounded-lg ${t.color} flex items-center justify-center text-white shadow-sm flex-shrink-0`}>
+                          <div className={`w-8 h-8 rounded-lg ${t.color} flex items-center justify-center text-white shadow-sm shrink-0`}>
                             <t.icon size={16} />
                           </div>
                           <span className={`text-[10px] font-black text-left leading-tight ${activeTemplate === t.id ? 'text-blue-700' : 'text-slate-500'} uppercase tracking-tighter`}>
@@ -483,7 +483,7 @@ export default function ResumeBuilder() {
                     </div>
 
                     {/* Resume Document Wrapper */}
-                    <div id="resume-document" className="bg-white rounded-2xl shadow-2xl overflow-hidden min-h-[1100px] border border-slate-200 origin-top transform transition-all duration-500 print:shadow-none print:border-none print:rounded-none print:w-full print:absolute print:top-0 print:left-0 print:m-0 print:h-auto">
+                    <div id="resume-document" className="bg-white rounded-2xl shadow-2xl overflow-hidden min-h-1100px border border-slate-200 origin-top transform transition-all duration-500 print:shadow-none print:border-none print:rounded-none print:w-full print:absolute print:top-0 print:left-0 print:m-0 print:h-auto">
                       
                       {/* TEMPLATE RENDERING */}
                       {activeTemplate === "professional" && <ProfessionalTemplate formData={formData} />}
