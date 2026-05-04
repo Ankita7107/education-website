@@ -37,7 +37,7 @@ export default function Footer() {
       {/* CTA Strip */}
       <div className="bg-linear-to-r from-blue-700 via-blue-600 to-blue-700 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="font-heading text-xl font-bold text-white">
               Ready to Hire? Get Started Today
             </h3>
@@ -58,8 +58,8 @@ export default function Footer() {
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {/* Brand */}
-        <div className="lg:col-span-1">
-          <Link href="/" className="group flex items-center gap-3 mb-6">
+        <div className="lg:col-span-1 flex flex-col items-center md:items-start text-center md:text-left">
+          <Link href="/" className="group flex items-center justify-center md:justify-start gap-3 mb-6">
             <div className="relative w-12 h-12 rounded-2xl bg-linear-to-br from-blue-500 via-blue-600 to-indigo-700 flex items-center justify-center shadow-xl shadow-blue-900/40 group-hover:shadow-blue-500/30 transition-all duration-500 hover:scale-105 group-hover:-rotate-3 overflow-hidden">
               {/* Animated Shine Effect */}
               <div className="absolute inset-0 bg-linear-to-tr from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out" />
@@ -100,7 +100,7 @@ export default function Footer() {
             leads and affordable job posting solutions.
           </p>
           {/* Contact */}
-          <div className="space-y-3 text-sm text-slate-400">
+          <div className="space-y-3 text-sm text-slate-400 flex flex-col items-center md:items-start">
             <div className="flex items-center gap-3">
               <Phone size={15} className="text-blue-400 shrink-0" />
               <span>+91 98765 43210</span>
@@ -115,7 +115,7 @@ export default function Footer() {
             </div>
           </div>
           {/* Social */}
-          <div className="flex items-center gap-3 mt-6">
+          <div className="flex items-center justify-center md:justify-start gap-3 mt-6">
             {[
               { icon: Globe, href: "#", label: "Website" },
               { icon: Share2, href: "#", label: "Social" },
@@ -134,8 +134,8 @@ export default function Footer() {
         </div>
 
         {/* Quick Links */}
-        <div>
-          <h4 className="font-heading font-700 text-white text-base mb-5 pb-2 border-b border-white/10">
+        <div className="flex flex-col items-center md:items-start text-center md:text-left">
+          <h4 className="font-heading font-700 text-white text-base mb-5 pb-2 border-b border-white/10 w-full md:w-full">
             Quick Links
           </h4>
           <ul className="space-y-2.5">
@@ -143,7 +143,7 @@ export default function Footer() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="text-slate-400 hover:text-white text-sm flex items-center gap-2 group transition-colors duration-200"
+                  className="text-slate-400 hover:text-white text-sm flex items-center justify-center md:justify-start gap-2 group transition-colors duration-200"
                 >
                   <span className="w-1 h-1 rounded-full bg-blue-500 group-hover:w-2 transition-all duration-200" />
                   {link.label}
@@ -153,7 +153,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/login"
-                className="text-slate-400 hover:text-white text-sm flex items-center gap-2 group transition-colors duration-200"
+                className="text-slate-400 hover:text-white text-sm flex items-center justify-center md:justify-start gap-2 group transition-colors duration-200"
               >
                 <span className="w-1 h-1 rounded-full bg-blue-500 group-hover:w-2 transition-all duration-200" />
                 Login / Dashboard
@@ -163,8 +163,8 @@ export default function Footer() {
         </div>
 
         {/* Services */}
-        <div>
-          <h4 className="font-heading font-700 text-white text-base mb-5 pb-2 border-b border-white/10">
+        <div className="flex flex-col items-center md:items-start text-center md:text-left">
+          <h4 className="font-heading font-700 text-white text-base mb-5 pb-2 border-b border-white/10 w-full md:w-full">
             Our Services
           </h4>
           <ul className="space-y-2.5">
@@ -172,7 +172,7 @@ export default function Footer() {
               <li key={s}>
                 <Link
                   href="/services"
-                  className="text-slate-400 hover:text-white text-sm flex items-center gap-2 group transition-colors duration-200"
+                  className="text-slate-400 hover:text-white text-sm flex items-center justify-center md:justify-start gap-2 group transition-colors duration-200"
                 >
                   <span className="w-1 h-1 rounded-full bg-amber-400 group-hover:w-2 transition-all duration-200" />
                   {s}
@@ -186,11 +186,11 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-white/5 py-5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-slate-500">
-          <p>
+          <p className="text-center md:text-left">
             © 2026 Talent Connect India Recruitment Solutions All rights
             reserved.
           </p>
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center justify-center md:justify-end gap-4">
             <Link href="#" className="hover:text-slate-300 transition-colors">
               Privacy Policy
             </Link>
