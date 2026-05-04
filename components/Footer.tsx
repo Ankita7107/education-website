@@ -166,7 +166,7 @@ export default function Footer() {
             © 2026 Talent Connect India Recruitment Solutions All rights
             reserved.
           </p>
-          <div className="flex flex-wrap items-center justify-center md:justify-end gap-4">
+          {/* <div className="flex flex-wrap items-center justify-center md:justify-end gap-4">
             <Link href="#" className="hover:text-slate-300 transition-colors">
               Privacy Policy
             </Link>
@@ -176,7 +176,7 @@ export default function Footer() {
             <Link href="#" className="hover:text-slate-300 transition-colors">
               Refund Policy
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
