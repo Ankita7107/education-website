@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   Briefcase,
   Phone,
@@ -59,40 +60,15 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {/* Brand */}
         <div className="lg:col-span-1 flex flex-col items-center md:items-start text-center md:text-left">
-          <Link href="/" className="group flex items-center justify-center md:justify-start gap-3 mb-6">
-            <div className="relative w-12 h-12 rounded-2xl bg-linear-to-br from-blue-500 via-blue-600 to-indigo-700 flex items-center justify-center shadow-xl shadow-blue-900/40 group-hover:shadow-blue-500/30 transition-all duration-500 hover:scale-105 group-hover:-rotate-3 overflow-hidden">
-              {/* Animated Shine Effect */}
-              <div className="absolute inset-0 bg-linear-to-tr from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out" />
-
-              {/* Glass Border */}
-              <div className="absolute inset-0 rounded-2xl border border-white/20" />
-
-              <Briefcase className="w-6 h-6 text-white relative z-10 animate-float-slow" />
-
-              {/* Notification Dot with Pulse */}
-              <div className="absolute -top-0.5 -right-0.5 w-4 h-4 rounded-full bg-amber-400 border-2 border-[#0B1120] shadow-sm">
-                <div className="absolute inset-0 rounded-full bg-amber-400 animate-ping opacity-75" />
-              </div>
-            </div>
-
-            <div className="leading-tight">
-              <div className="flex items-center">
-                <span className="font-heading font-800 text-2xl tracking-tighter text-white group-hover:text-blue-400 transition-colors duration-300">
-                  Talent
-                </span>
-                <span className="font-heading font-800 text-2xl tracking-tighter text-blue-400">
-                  Connect
-                </span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-[10px] font-black text-amber-400 tracking-[0.2em] uppercase">
-                  India
-                </span>
-                <div className="h-px w-8 bg-white/10" />
-                <div className="text-[9px] font-bold text-slate-500 tracking-wider">
-                  RECRUITMENT
-                </div>
-              </div>
+          <Link href="/" className="group flex items-center justify-center md:justify-start mb-6">
+            <div className="relative w-60 h-20 overflow-hidden rounded-xl bg-white shadow-lg">
+              <Image
+                src="/cilogo.png"
+                alt="Talent Connect India Logo"
+                fill
+                sizes="288px"
+                className="object-contain scale-[1.8] md:scale-[2.0] transition-transform duration-300 group-hover:scale-[2.1]"
+              />
             </div>
           </Link>
           <p className="text-slate-400 text-sm leading-relaxed mb-6">

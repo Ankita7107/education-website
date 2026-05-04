@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X, Briefcase, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -36,49 +37,22 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 transition-all duration-300 print:hidden ${
-        scrolled
-          ? "bg-white/95 backdrop-blur-xl shadow-lg shadow-navy-900/8 border-b border-slate-100"
-          : "bg-white/90 backdrop-blur-md border-b border-slate-100/50"
-      }`}
+      className={`sticky top-0 z-50 transition-all duration-300 print:hidden ${scrolled
+        ? "bg-white/95 backdrop-blur-xl shadow-lg shadow-navy-900/8 border-b border-slate-100"
+        : "bg-white/90 backdrop-blur-md border-b border-slate-100/50"
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-18">
         {/* Logo */}
-        <Link href="/" className="group flex items-center gap-3">
-          <div className="relative w-12 h-12 rounded-2xl bg-linear-to-br from-blue-500 via-blue-600 to-indigo-700 flex items-center justify-center shadow-xl shadow-blue-600/20 group-hover:shadow-blue-600/40 transition-all duration-500 hover:scale-105 group-hover:rotate-3 overflow-hidden">
-            {/* Animated Shine Effect */}
-            <div className="absolute inset-0 bg-linear-to-tr from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out" />
-
-            {/* Glass Border */}
-            <div className="absolute inset-0 rounded-2xl border border-white/20" />
-
-            <Briefcase className="w-6 h-6 text-white relative z-10 animate-float-slow" />
-
-            {/* Notification Dot with Pulse */}
-            <div className="absolute -top-0.5 -right-0.5 w-4 h-4 rounded-full bg-amber-400 border-2 border-white shadow-sm">
-              <div className="absolute inset-0 rounded-full bg-amber-400 animate-ping opacity-75" />
-            </div>
-          </div>
-
-          <div className="leading-tight">
-            <div className="flex items-center">
-              <span className="font-heading font-800 text-2xl tracking-tighter text-slate-900 group-hover:text-blue-600 transition-colors duration-300">
-                Talent
-              </span>
-              <span className="font-heading font-800 text-2xl tracking-tighter text-blue-600">
-                Connect
-              </span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="text-[10px] font-black text-blue-800 tracking-[0.2em] uppercase opacity-80">
-                India
-              </span>
-              <div className="h-px w-8 bg-slate-200" />
-              <div className="text-[9px] font-bold text-slate-400 tracking-wider">
-                RECRUITMENT
-              </div>
-            </div>
-          </div>
+        <Link href="/" className="group flex items-center justify-center w-64 h-16 relative overflow-hidden rounded-lg">
+          <Image
+            src="/cilogo.png"
+            alt="Talent Connect India Logo"
+            fill
+            sizes="256px"
+            className="object-contain scale-[1.8] md:scale-[2.0] mix-blend-multiply transition-transform duration-300 group-hover:scale-[1.9]"
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}
@@ -124,11 +98,10 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href!}
-                className={`px-4 py-2 text-sm font-semibold rounded-lg transition-all duration-200 ${
-                  pathname === link.href
-                    ? "text-blue-600 bg-blue-50"
-                    : "text-slate-600 hover:text-blue-600 hover:bg-slate-50"
-                }`}
+                className={`px-4 py-2 text-sm font-semibold rounded-lg transition-all duration-200 ${pathname === link.href
+                  ? "text-blue-600 bg-blue-50"
+                  : "text-slate-600 hover:text-blue-600 hover:bg-slate-50"
+                  }`}
               >
                 {link.label}
               </Link>
@@ -194,11 +167,10 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href!}
                   onClick={() => setOpen(false)}
-                  className={`block px-3 py-2.5 text-sm font-semibold rounded-lg transition-colors ${
-                    pathname === link.href
-                      ? "text-blue-600 bg-blue-50"
-                      : "text-slate-700 hover:bg-slate-50"
-                  }`}
+                  className={`block px-3 py-2.5 text-sm font-semibold rounded-lg transition-colors ${pathname === link.href
+                    ? "text-blue-600 bg-blue-50"
+                    : "text-slate-700 hover:bg-slate-50"
+                    }`}
                 >
                   {link.label}
                 </Link>
