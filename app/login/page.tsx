@@ -49,7 +49,7 @@ export default function LoginPage() {
                     <p className="text-slate-300">Select your role to access your dashboard.</p>
                 </motion.div>
 
-                <div className="grid md:grid-cols-5 gap-3 mb-8">
+                <div className="flex flex-wrap justify-center gap-4 mb-10">
                     {panels.map((p) => (
                         <button
                             key={p.id}
@@ -58,13 +58,15 @@ export default function LoginPage() {
                                 setOtpSent(false);
                                 setView("login");
                             }}
-                            className={`flex flex-col items-center gap-2 p-4 rounded-2xl border-2 transition-all duration-200 ${active === p.id
-                                ? `${p.bg} ${p.border} ${p.color} shadow-lg`
-                                : "bg-white/5 border-white/15 text-slate-400 hover:bg-white/10"
+                            className={`flex flex-col items-center justify-center gap-3 p-5 rounded-2xl border-2 min-w-35 transition-all duration-300 ${active === p.id
+                                ? `${p.bg} ${p.border} ${p.color} shadow-[0_8px_30px_rgb(0,0,0,0.12)] scale-105`
+                                : "bg-white/5 border-white/10 text-slate-400 hover:bg-white/10 hover:border-white/20"
                                 }`}
                         >
-                            <p.icon size={22} className={active === p.id ? p.color : "text-slate-400"} />
-                            <span className="text-xs font-bold">{p.label}</span>
+                            <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${active === p.id ? p.bg : "bg-white/5"}`}>
+                                <p.icon size={22} className={active === p.id ? p.color : "text-slate-400"} />
+                            </div>
+                            <span className="text-sm font-bold tracking-tight">{p.label}</span>
                         </button>
                     ))}
                 </div>
