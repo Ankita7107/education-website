@@ -16,7 +16,7 @@ const services = [
     price: "₹199",
     color: "text-blue-600", bg: "bg-blue-50", border: "border-blue-200",
     desc: "Post verified job openings to 50,000+ active candidates across India.",
-    features: ["Verified candidate reach", "135+ cities targeting", "30-day active listing", "WhatsApp alerts"],
+    features: ["Verified candidate reach", "135+ cities targeting", "30-day active listing" /*, "WhatsApp alerts"*/],
   },
   {
     icon: Users,
@@ -24,7 +24,7 @@ const services = [
     price: "Custom",
     color: "text-emerald-600", bg: "bg-emerald-50", border: "border-emerald-200",
     desc: "End-to-end hiring support — from sourcing to onboarding.",
-    features: ["Pre-screened profiles", "Interview scheduling", "Skill assessment", "Background verification"],
+    features: ["Pre-screened profiles", "Interview scheduling" /*, "Skill assessment", "Background verification"*/],
   },
   {
     icon: Database,
@@ -32,7 +32,7 @@ const services = [
     price: "₹999/mo",
     color: "text-purple-600", bg: "bg-purple-50", border: "border-purple-200",
     desc: "Direct access to our verified resume database of 2 lakh+ job seekers.",
-    features: ["Filter by city/skill", "Verified contact info", "Download profiles", "Regular updates"],
+    features: ["Filter by city/skill", "Verified contact info", "Download profiles" /*, "Regular updates"*/],
   },
   {
     icon: Phone,
@@ -40,7 +40,7 @@ const services = [
     price: "Included",
     color: "text-amber-600", bg: "bg-amber-50", border: "border-amber-200",
     desc: "Automated AI calling that screens candidates and delivers only interested ones to you.",
-    features: ["250+ calls/day", "Auto-screening", "Call recording", "Lead reports"],
+    features: ["250+ calls/day", "Auto-screening" /*, "Call recording", "Lead reports"*/],
   },
   {
     icon: Building2,
@@ -48,7 +48,7 @@ const services = [
     price: "Custom",
     color: "text-rose-600", bg: "bg-rose-50", border: "border-rose-200",
     desc: "Need 50, 100, or 1000 workers? We specialize in large-scale recruitment drives.",
-    features: ["Dedicated team", "Pan-India coverage", "Quick turnaround", "Walk-in drive support"],
+    features: ["Pan-India coverage", "Quick turnaround" /*, "Dedicated team", "Walk-in drive support"*/],
   },
   {
     icon: Shield,
@@ -56,7 +56,7 @@ const services = [
     price: "Included",
     color: "text-teal-600", bg: "bg-teal-50", border: "border-teal-200",
     desc: "Every candidate's email and mobile is verified before you receive the lead.",
-    features: ["OTP verification", "Email validation", "Duplicate removal", "Quality scoring"],
+    features: ["OTP verification", "Email validation" /*, "Duplicate removal", "Quality scoring"*/],
   },
   {
     icon: Megaphone,
@@ -64,7 +64,7 @@ const services = [
     price: "₹2,999",
     color: "text-indigo-600", bg: "bg-indigo-50", border: "border-indigo-200",
     desc: "Social media + WhatsApp + SMS campaigns targeting specific job profiles.",
-    features: ["Multi-channel reach", "10,000+ impressions", "Targeted demographics", "Performance reports"],
+    features: ["Multi-channel reach", "10,000+ impressions", "Targeted demographics" /*, "Performance reports"*/],
   },
   {
     icon: BadgeCheck,
@@ -72,7 +72,7 @@ const services = [
     price: "From ₹199",
     color: "text-orange-600", bg: "bg-orange-50", border: "border-orange-200",
     desc: "Flexible subscription plans for startups, SMEs, and large enterprises.",
-    features: ["No long-term lock-in", "Pay-per-hire option", "Custom enterprise deals", "Volume discounts"],
+    features: ["No long-term lock-in", "Pay-per-hire option" /*, "Custom enterprise deals", "Volume discounts"*/],
   },
 ];
 
@@ -83,7 +83,7 @@ const plans = [
     period: "per job post",
     highlight: false,
     color: "border-slate-200",
-    features: ["1 Job Posting", "30-day listing", "AI Calling", "Verified leads", "Email support"],
+    features: ["1 Job Posting", "30-day listing", "Verified leads", "Email support" /*, "AI Calling"*/],
   },
   {
     name: "Pro",
@@ -91,7 +91,7 @@ const plans = [
     period: "per month",
     highlight: true,
     color: "border-blue-500",
-    features: ["5 Job Postings", "60-day listing", "AI Calling + Priority", "Resume DB Access", "Dedicated Recruiter", "WhatsApp support"],
+    features: ["5 Job Postings", "60-day listing", "AI Calling + Priority", "Resume DB Access" /*, "Dedicated Recruiter", "WhatsApp support"*/],
   },
   {
     name: "Enterprise",
@@ -99,7 +99,7 @@ const plans = [
     period: "contact us",
     highlight: false,
     color: "border-amber-400",
-    features: ["Unlimited Postings", "Bulk Hiring", "Campaign Management", "Full DB Access", "Account Manager", "SLA Guarantee"],
+    features: ["Unlimited Postings", "Bulk Hiring", "Campaign Management", "Full DB Access" /*, "Account Manager", "SLA Guarantee"*/],
   },
 ];
 
