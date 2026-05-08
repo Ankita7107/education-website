@@ -22,9 +22,11 @@ export default function EmployerDashboard() {
   return (
     <DashboardLayout role="employer" title="Employer Overview">
       <div className="flex items-center justify-end mb-8">
-        <button className="bg-amber-500 text-white px-5 py-2.5 rounded-xl flex items-center gap-2 hover:bg-amber-600 transition-all font-bold shadow-lg shadow-amber-500/20">
-          <Plus size={18} /> Post New Job
-        </button>
+        <Link href="/dashboard/employer/post-job">
+          <button className="bg-amber-500 text-white px-5 py-2.5 rounded-xl flex items-center gap-2 hover:bg-amber-600 transition-all font-bold shadow-lg shadow-amber-500/20">
+            <Plus size={18} /> Post New Job
+          </button>
+        </Link>
       </div>
 
       <div className="py-2">

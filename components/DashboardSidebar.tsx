@@ -25,7 +25,7 @@ const menuItems: Record<string, SidebarItem[]> = {
   ],
   employer: [
     { id: "overview", label: "Dashboard", icon: LayoutDashboard, path: "/dashboard/employer" },
-    { id: "post-job", label: "Post New Job", icon: Briefcase, path: "/employer" },
+    { id: "post-job", label: "Post New Job", icon: Briefcase, path: "/dashboard/employer/post-job" },
     { id: "candidates", label: "Applicants", icon: Users, path: "/dashboard/employer/applicants" },
     { id: "settings", label: "Company Profile", icon: Settings, path: "/dashboard/employer/profile" },
   ],
