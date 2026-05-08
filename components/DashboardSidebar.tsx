@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { 
   LayoutDashboard, Briefcase, Users, 
   UserCheck, Megaphone, Settings, 
-  LogOut, Home, Bell, Search, Menu, X
+  LogOut, Home, Bell, Search, Menu, X, Mail
 } from "lucide-react";
 import { useState } from "react";
 
@@ -21,6 +21,7 @@ const menuItems: Record<string, SidebarItem[]> = {
     { id: "overview", label: "Overview", icon: LayoutDashboard, path: "/dashboard/admin" },
     { id: "users", label: "Manage Users", icon: Users, path: "/dashboard/admin/users" },
     { id: "jobs", label: "All Job Posts", icon: Briefcase, path: "/dashboard/admin/jobs" },
+    { id: "enquiries", label: "Enquiries", icon: Mail, path: "/dashboard/admin/enquiries" },
     { id: "settings", label: "Settings", icon: Settings, path: "/dashboard/admin/settings" },
   ],
   employer: [
