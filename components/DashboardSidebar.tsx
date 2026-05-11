@@ -39,7 +39,7 @@ const menuItems: Record<string, SidebarItem[]> = {
     { id: "applications", label: "My Applications", icon: CheckCircle, path: "/dashboard/employee/applications" },
     { id: "saved", label: "Saved Jobs", icon: Star, path: "/dashboard/employee/saved-jobs" },
     { id: "interviews", label: "Interview Hub", icon: Video, path: "/dashboard/employee/interviews" },
-    { id: "resume", label: "Resume Builder", icon: UserCheck, path: "/resume-builder" },
+    { id: "resume", label: "Resume Builder", icon: UserCheck, path: "/dashboard/employee/resume" },
     { id: "profile", label: "My Profile", icon: Settings, path: "/dashboard/employee/profile" },
   ],
   recruiter: [
