@@ -46,7 +46,6 @@ const menuItems: Record<string, SidebarItem[]> = {
   recruiter: [
     { id: "overview", label: "Recruiter Hub", icon: LayoutDashboard, path: "/dashboard/recruiter" },
     { id: "leads", label: "Call Logs", icon: Users, path: "/dashboard/recruiter/leads" },
-    { id: "settings", label: "Account Settings", icon: Settings, path: "/dashboard/recruiter/settings" },
   ],
   promoter: [
     { id: "overview", label: "Promoter Dashboard", icon: LayoutDashboard, path: "/dashboard/promoter" },
