@@ -87,11 +87,7 @@ export default function PostJobPage() {
                 <label className="form-label">Location (City) *</label>
                 <div className="relative">
                   <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" size={16} />
-<<<<<<< HEAD
-                  <input type="text" className="form-input" style={{ paddingLeft: "40px" }} placeholder="e.g. Bangalore, Remote" />
-=======
                   <input type="text" className="form-input pl-10" placeholder="e.g. Bangalore, Remote" />
->>>>>>> 1268344df168c46e6895d0a4fbe21a9185824135
                 </div>
               </div>
 
@@ -99,11 +95,7 @@ export default function PostJobPage() {
                 <label className="form-label">Salary Range (Monthly)</label>
                 <div className="relative">
                   <IndianRupee className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" size={16} />
-<<<<<<< HEAD
-                  <input type="text" className="form-input" style={{ paddingLeft: "40px" }} placeholder="e.g. 40,000 - 60,000" />
-=======
                   <input type="text" className="form-input pl-10" placeholder="e.g. 40,000 - 60,000" />
->>>>>>> 1268344df168c46e6895d0a4fbe21a9185824135
                 </div>
               </div>
 
@@ -111,11 +103,7 @@ export default function PostJobPage() {
                 <label className="form-label">Deadline to Apply</label>
                 <div className="relative">
                   <Clock className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" size={16} />
-<<<<<<< HEAD
-                  <input type="date" className="form-input" style={{ paddingLeft: "40px" }} />
-=======
                   <input type="date" className="form-input pl-10" />
->>>>>>> 1268344df168c46e6895d0a4fbe21a9185824135
                 </div>
               </div>
             </div>
@@ -173,25 +161,6 @@ export default function PostJobPage() {
                     <Plus size={20} />
                   </button>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          {/* AI Pre-screening toggle */}
-          <div className="bg-linear-to-br from-blue-600 to-blue-700 rounded-2xl p-6 md:p-8 text-white shadow-xl shadow-blue-500/20">
-            <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
-                  <CheckCircle size={20} />
-                </div>
-                <div>
-                  <h4 className="font-bold text-lg">AI Pre-screening Calling</h4>
-                  <p className="text-blue-100 text-xs">Enable AI to automatically call and screen applicants.</p>
-                </div>
-              </div>
-              <div className="relative inline-flex items-center cursor-pointer">
-                <input type="checkbox" className="sr-only peer" defaultChecked />
-                <div className="w-11 h-6 bg-blue-400 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-emerald-400"></div>
               </div>
             </div>
           </div>

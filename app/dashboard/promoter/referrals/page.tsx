@@ -1,10 +1,6 @@
 "use client";
 import DashboardLayout from "@/components/DashboardLayout";
-<<<<<<< HEAD
 import { Users, IndianRupee, Share2, TrendingUp, Copy, ExternalLink, ArrowUpRight, Search, Filter } from "lucide-react";
-=======
-import { Users, DollarSign, Share2, TrendingUp, Copy, ExternalLink, ArrowUpRight, Search, Filter } from "lucide-react";
->>>>>>> 1268344df168c46e6895d0a4fbe21a9185824135
 import { motion } from "framer-motion";
 
 const referrals = [
@@ -35,11 +31,7 @@ export default function PromoterReferralsPage() {
         {[
           { label: "Total Referrals", value: "48", icon: Users, color: "text-amber-600", bg: "bg-amber-50" },
           { label: "Active Today", value: "3", icon: ArrowUpRight, color: "text-blue-600", bg: "bg-blue-50" },
-<<<<<<< HEAD
           { label: "Total Earnings", value: "₹7,300", icon: IndianRupee, color: "text-emerald-600", bg: "bg-emerald-50" },
-=======
-          { label: "Total Earnings", value: "₹7,300", icon: DollarSign, color: "text-emerald-600", bg: "bg-emerald-50" },
->>>>>>> 1268344df168c46e6895d0a4fbe21a9185824135
           { label: "Unpaid Balance", value: "₹1,850", icon: TrendingUp, color: "text-purple-600", bg: "bg-purple-50" },
         ].map((s) => (
           <div key={s.label} className="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm">
@@ -110,7 +102,7 @@ export default function PromoterReferralsPage() {
             <tbody className="divide-y divide-slate-50">
               {referrals.map((r) => (
                 <motion.tr 
-                  key={r.id}
+                   key={r.id}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   className="hover:bg-slate-50 transition-colors"
