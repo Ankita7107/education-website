@@ -220,9 +220,6 @@ export function TemplateSelection({ onSelect, onAiBuild }: TemplateSelectionProp
           <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-20 -mt-20 blur-3xl group-hover:bg-white/10 transition-colors" />
           <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex-1">
-              <div className="flex items-center gap-2 mb-3">
-                <span className="bg-white/20 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">New Feature</span>
-              </div>
               <h2 className="text-2xl font-heading font-black text-white mb-2">Build with AI Assistant</h2>
               <p className="text-blue-100 text-sm">Answer 4 simple questions and let our AI generate a professional resume for you in seconds.</p>
             </div>
